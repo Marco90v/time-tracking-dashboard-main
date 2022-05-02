@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --LightRedW : hsl(15, 100%, 70%); /* work */
+    --SoftBlue : hsl(195, 74%, 62%); /* play */
+    --LightRedE : hsl(348, 100%, 68%); /* study */
+    --LimeGreen : hsl(145, 58%, 55%); /* exercise */
+    --Violet : hsl(264, 64%, 52%); /* social */
+    --SoftRrange : hsl(43, 84%, 65%); /* self care */
+
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--VeryDarkBlue);
+}
+.profile{
+    color: var(--DesaturatedBlue);
+    background-color: var(--DarkBlue);
+    margin: 5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 10px;
+}
+nav{
+    height: 50px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+nav ul li{
+    transition: all .3s ease-in-out;
+}
+nav ul li:hover{
+    color: var(--PaleBlue);
+    cursor: pointer;
+}
+.activeMenu{
+    color: var(--PaleBlue);
+}
+.user{
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+.user picture img {
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+.reportUser{
+    width: 70%;
+    margin-left: 1rem;
+    padding-top: 10px;
+    color: var(--PaleBlue);
+}
+.reportUser span{
+    font-weight: 300;
+}
+.reportUser h1{
+    font-size: 23px;
+    font-weight: 500;
+}
+.Work, .Play, .Study, .Exercise, .Social, .Self-Care{
+    margin: 1.5rem;
+    position: relative;
+    height: 145px;
+}
+.borIdent{
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.borIdent img{
+    margin-top: -10px;
+    margin-right: 1rem;
+}
+.Exercise .borIdent img{
+    margin-top: 0;
+}
+.Work .borIdent{
+    background-color: var(--LightRedW);
+}
+.Play .borIdent{
+    background-color: var(--SoftBlue);
+}
+.Study .borIdent{
+    background-color: var(--LightRedE);
+}
+.Exercise .borIdent{
+    background-color: var(--LimeGreen);
+}
+.Social .borIdent{
+    background-color: var(--Violet);
+}
+.Self-Care .borIdent{
+    background-color: var(--SoftRrange);
+}
+.content{
+    background-color: var(--DarkBlue);
+    color: var(--PaleBlue);
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    transition: all .3s ease-in-out;
+}
+.content:hover{
+    background-color: hsl(235.7, 46.1%, 29.8%);
+    cursor: pointer;
+}
+.contentTitle, .contentHrs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.contentTitle img{
+    height: 5px;
+    opacity: .5;
+    cursor: pointer;
+}
+.contentTitle img:hover{
+    opacity: 1;
+}
+.contentHrs h2{
+    font-weight: 300;
+    font-size: 30px;
+}
+.contentHrs h4{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);}

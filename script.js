@@ -22,11 +22,11 @@ function card({title,timeframes}) {
     </div>
     <div class="content">
       <div class="contentTitle">
-        <h3>${title}</h3>
+        <h2>${title}</h3>
         <img src="./images/icon-ellipsis.svg" alt="config">
       </div>
       <div class="contentHrs">
-        <h2>${current}hrs</h2>
+        <h3>${current}hrs</h2>
         <h4>Last Week - ${previous}hrs</h4>
       </div>
     </div>

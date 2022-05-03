@@ -14,10 +14,11 @@ function card({title,timeframes}) {
 
     const current = timeframes[menu].current;
     const previous = timeframes[menu].previous;
+    const titulo = title.replace(" ","-");
 
-    const element = `<div class="${title.replace(" ","-")}">
+    const element = `<div class="${titulo}">
     <div class="borIdent">
-      <img src="./images/icon-${title.replace(" ","-")}.svg" alt="work">
+      <img src="./images/icon-${titulo.toLowerCase()}.svg" alt="work">
     </div>
     <div class="content">
       <div class="contentTitle">

@@ -63,10 +63,10 @@ function changeTimeFrames(tipo) {
         const clase = "." + element.title.replace(" ","-");
         const div = document.querySelector(clase);
 
-        const h2 = div.querySelector("h2");
+        const h3 = div.querySelector("h3");
         const h4 = div.querySelector("h4");
 
-        h2.innerText = element.timeframes[menu].current + "hrs";
+        h3.innerText = element.timeframes[menu].current + "hrs";
         h4.innerText = `Last ${dwm} - ${element.timeframes[menu].previous} hrs`;
     })
 }

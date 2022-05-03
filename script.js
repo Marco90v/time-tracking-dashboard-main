@@ -42,8 +42,22 @@ function cargarCard() {
     });
 }
 
+function lastDWM() {
+  switch (menu) {
+    case "daily":
+      return "Day";
+    case "weekly":
+      return "Week";
+    case "monthly":
+      return "Month";
+    default:
+      return "Weekly"
+  }
+}
+
 function changeTimeFrames(tipo) {
     menu = tipo;
+    const dwm = lastDWM();
     activeMenu();
     data.forEach(element=>{
         const clase = "." + element.title.replace(" ","-");
@@ -53,7 +67,7 @@ function changeTimeFrames(tipo) {
         const h4 = div.querySelector("h4");
 
         h2.innerText = element.timeframes[menu].current + "hrs";
-        h4.innerText = "Last Week - " + element.timeframes[menu].previous + "hrs";
+        h4.innerText = `Last ${dwm} - ${element.timeframes[menu].previous} hrs`;
     })
 }
 
